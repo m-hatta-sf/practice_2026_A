@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+/* =========================================
+   ベーススタイル
+========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================================
+   ヘッダー
+========================================= */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+/* =========================================
+   メインコンテンツ共通
+========================================= */
+section {
+    padding: 80px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.grid-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    /* 画面幅に合わせて1列〜3列に自動調整 */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+/* =========================================
+   キャッチコピー (Hero セクション)
+========================================= */
+.hero {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* =========================================
+   メンバー紹介
+========================================= */
+.member-icon {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.role {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* =========================================
+   フッター
+========================================= */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.copyright {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    color: #aaa;
+}
+
+/* スマホ用の微調整 */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
