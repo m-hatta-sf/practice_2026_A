@@ -123,20 +123,7 @@ section h2 {
 /* =========================================
    メンバー紹介
 ========================================= */
-.member-icon {
 
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 15px;
-
-    background-image: url("https://img.icons8.com/?size=100&id=vdRBB39AyMIO&format=png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-  
-    font-size: 0; 
-}
 .role {
     font-size: 0.9rem;
     color: #666;
@@ -146,16 +133,16 @@ section h2 {
 
 .member-icon {
 
-    width: 100px;
+    width: 150px;
     height: 100px;
     margin: 0 auto 15px;
 
-    background-image: url("https://img.icons8.com/?size=100&id=vdRBB39AyMIO&format=png");
-    background-size: contain;
+    background-image: url("https://usagif.com/wp-content/uploads/gif/lion-roar-17.gif");
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
-
-  
+    background-repeat: no-repeat;
+    background-position: center;
     font-size: 0; 
 }
 
