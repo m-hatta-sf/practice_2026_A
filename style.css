@@ -187,13 +187,32 @@ section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     line-height: 1.4;
+
+    /* アニメーションの設定 */
+    opacity: 0; /* 最初は消しておく */
+    animation: fadeInUp 1.0s ease-out forwards; /* 1秒かけて所定の位置へ */
 }
 
 .hero p {
     font-size: 1.8rem;
     opacity: 0.9;
+
+    /* アニメーションの設定 */
+    opacity: 0; /* 最初は消しておく */
+    animation: fadeInUp 1.0s ease-out 0.5s forwards; /* 0.5秒遅らせてスタート */
 }
 
+/* アニメーション（下から浮かび上がる）の定義 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* 20px下から */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* 所定の位置（0）へ */
+    }
+}
 /* =========================================
    メンバー紹介
 ========================================= */
