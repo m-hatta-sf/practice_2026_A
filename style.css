@@ -118,11 +118,19 @@ section h2 {
    メンバー紹介
 ========================================= */
 .member-icon {
-    font-size: 4rem;
-    margin-bottom: 15px;
-    color: #ccc;
-}
 
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+
+    background-image: url("https://img.icons8.com/?size=100&id=vdRBB39AyMIO&format=png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  
+    font-size: 0; 
+}
 .role {
     font-size: 0.9rem;
     color: #666;
@@ -134,7 +142,7 @@ section h2 {
    フッター
 ========================================= */
 footer {
-    background-color: #333;
+    background-color: #7a7878;
     color: #fff;
     padding: 40px 20px 20px;
     text-align: center;
