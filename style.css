@@ -29,6 +29,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    
 }
 
 .header-inner {
@@ -131,11 +132,10 @@ section h2 {
 }
 
 .member-icon {
-
     width: 150px;
-    height: 100px;
+    height: 140px;
     margin: 0 auto 15px;
-    background-image: url("https://usagif.com/wp-content/uploads/gif/lion-roar-17.gif");
+    background-image: url("https://img.icons8.com/?size=100&id=Sil0qI2jQIg0&format=png&color=000000");
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
